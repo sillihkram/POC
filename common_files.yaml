@@ -1,7 +1,9 @@
 ---
 - name: Create /etc/passwd file with root ownership and 0600 permissions
-  hosts: your_target_host  # Replace with the appropriate target host or group
-
+  hosts: all
+  become: yes
+  become_method: dzdo
+  
   tasks:
     - name: Create /etc/passwd file
       ansible.builtin.file:
