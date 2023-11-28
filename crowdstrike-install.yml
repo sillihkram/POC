@@ -1,0 +1,8 @@
+---
+- name: Install crowd strike falcon sensor
+  roles:
+
+  - role: crowdstrike.falcon.falcon_install
+    vars:
+      falcon_client_id: "{{ FALCON_CLIENT_ID }}"
+      falcon_client_secret: "{{ FALCON_CLIENT_SECRET }}"
