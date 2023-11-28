@@ -3,7 +3,7 @@
   hosts: all
   become: yes
   become_method: dzdo
-  
+
   tasks:
     - name: Create /etc/passwd file
       ansible.builtin.file:
