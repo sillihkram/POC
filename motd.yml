@@ -7,7 +7,7 @@
   tasks:
     - name: Template a file to /etc/motd
       ansible.builtin.template:
-        src: /files/eula.j2
+        src: files/eula.j2
         dest: /etc/motd
         owner: root
         group: root
